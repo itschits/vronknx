@@ -1,0 +1,158 @@
+#root {
+    max-width: 1280px;
+    margin: 0;
+}
+
+.background-container {
+    background-image: url('../assets/neuralbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    height: 3.5rem;
+    background-color: transparent;
+}
+
+.logo-container {
+    background-image: url('../assets/logo.png');
+    height: 50px;
+    width: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 20px;
+    animation: slide-in 1s ease-out;
+    animation-fill-mode: forwards;
+    will-change: slide-in;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.bot_container {
+    position: fixed;
+    bottom: 13px;
+    right: 21px;
+    height: 70px;
+    width: 72px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 16px 17px;
+}
+
+.bot_logo {
+    background-image: url('../assets/11431338.webp');
+    filter: drop-shadow(0 0 2em #646cffaa);
+    animation: bounceIn 2s;
+}
+
+@keyframes bounceIn {
+
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.chatContainer {
+    height: auto;
+    max-width: 768px;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    left: 35%;
+    position: absolute;
+}
+
+.chatInputContainer {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    border: solid 1px white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 40%);
+}
+
+.textInput{
+    padding-left: 1.5rem;
+    contain: content;
+    overflow: hidden;
+    height: auto;
+    line-height: 1rem;
+    width: 85%;
+    background :none;
+}
+
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}

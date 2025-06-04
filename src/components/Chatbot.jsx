@@ -56,7 +56,7 @@ function Chatbot() {
             )}
             {messages.length !== 0 && (<header className='sticky top-0 shrink-0 z-20'>
                 <div className='flex flex-col h-full w-full gap-1 pt-4 pb-2'>
-                    <h1 className='font-urbanist text-[1.65rem] font-semibold text-blue-300'>Ask anything chatbot</h1>
+                    <h1 className='font-urbanist text-[1.65rem] font-semibold text-blue-300'>AI Chatbot 1.0</h1>
                 </div>
             </header>)}
 

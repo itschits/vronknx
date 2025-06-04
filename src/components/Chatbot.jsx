@@ -25,16 +25,11 @@ function Chatbot() {
 
         let chatIdOrNew = chatId;
         try {
-            if (!chatId) {
-                const {id} = await api.createChat();
-                setChatId(id);
-                chatIdOrNew = id;
-            }
 
-            const stream = await api.sendChatMessage(chatIdOrNew, trimmedMessage);
+            const stream = await api.sendChatMessage(trimmedMessage);
             for await (const textChunk of parseSSEStream(stream)) {
                 setMessages(draft => {
-                    draft[draft.length - 1].content += textChunk;
+                    draft[draft.length - 1].content += JSON.parse(textChunk).token;
                 });
             }
             setMessages(draft => {

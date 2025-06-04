@@ -116,7 +116,7 @@ layer(base);
 }
 
 body {
-  background-image: url('../assets/neuralbackground.jpg');
+  background-image: url('../assets/background.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -14,7 +14,7 @@ function ChatMessages({ messages, isLoading }) {
             <div key={idx} className='flex items-start gap-4 py-4 px-3 rounded-xl text-white bg-primary-blue/15'>
               {role === 'user' ?
                   (<img
-                          className='h-[32px] w-[32px] shrink-0'
+                          className='h-[26px] w-[30px] shrink-0'
                           src={userIcon}
                           alt='user2'
                   />) :
@@ -24,7 +24,7 @@ function ChatMessages({ messages, isLoading }) {
                       alt='robot'
                   />)}
               <div>
-                <div className='markdown-container'>
+                <div className='markdown-container font-barclay'>
                   {(loading && !content) ? <Spinner />
                       : (role === 'assistant')
                           ? <Markdown>{content}</Markdown>

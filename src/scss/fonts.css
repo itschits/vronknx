@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'Expert-Sans-Light';
+    src:url("../assets/font/expert-sans-light-webfont.woff") format("woff"),
+        url("../assets/font/expert-sans-light-webfont.woff2") format("woff2");
+}

@@ -47,7 +47,7 @@ function Chatbot() {
     return (
         <div className='grow flex flex-col gap-6 pt-6'>
             {messages.length === 0 && (
-                <div className='mt-3 font-urbanist place-items-center text-primary-blue text-xl font-light space-y-2'>
+                <div className='mt-3 font-barclay place-items-center text-primary-blue text-xl font-light space-y-2'>
                     <img src={bot} className='w-64 bigBot' alt='bot'/>
                     <p>Welcome!</p>
                     <p>I am powered by the latest technology reports from many services.</p>
@@ -56,7 +56,7 @@ function Chatbot() {
             )}
             {messages.length !== 0 && (<header className='sticky top-0 shrink-0 z-20'>
                 <div className='flex flex-col h-full w-full gap-1 pt-4 pb-2'>
-                    <h1 className='font-urbanist text-[1.65rem] font-semibold text-blue-300'>AI Chatbot 1.0</h1>
+                    <h1 className='font-barclay text-[1.65rem] font-semibold text-blue-300'>AI Chatbot 1.0</h1>
                 </div>
             </header>)}
 
